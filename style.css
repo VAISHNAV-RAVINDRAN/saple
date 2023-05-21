@@ -1,0 +1,41 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+}
+.container-fluid{
+    width:100%;
+    height:25vh;
+    background-color:#202020;
+}
+.top-interface{
+    overflow:hidden;
+}
+.sprankles{
+    width:30px;
+    height:30px;
+    position:absolute;
+    top:0px;
+    animation:spin 6s linear infinite;
+}
+.myname{
+    width:fit-content;
+    height:auto;
+    background-color:lavender;
+    padding:2rem;
+    border:3px solid gold;
+    margin:auto;
+    margin-top:-45px;
+    border-radius:7rem;
+    font-size:1em;
+}
+
+@keyframes spin {
+    0%{
+        transform:rotate(0deg);
+        top:-3vh;
+    }
+    100%{
+        transform:rotate(360deg) scale(0);
+        top:23vh;
+    }
+}
